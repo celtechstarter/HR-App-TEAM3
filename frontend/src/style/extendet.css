@@ -141,7 +141,7 @@
 .extended .pageTitle {
   margin-bottom: 20px;
   text-shadow:  2px 2px 7px;
-  color:red;
+  color:rgb(69, 69, 69);
 }
 
 .extended .list{
@@ -179,3 +179,4 @@
    align-items: center; 
    margin-bottom: 20px;
 }
+
