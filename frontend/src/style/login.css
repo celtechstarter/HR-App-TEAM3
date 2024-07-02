@@ -9,11 +9,11 @@
     height: 100vh;
   }
   
-  .logo {
+.logo {
     width: 200px; 
     height: auto; 
     margin-bottom: 20px; 
-    transition: transform 0.5s ease-in-out; /* Hinzufügen von Übergangseffekten */
+    transition: transform 0.7s ease-in-out; /* Hinzufügen von Übergangseffekten */
 }
 
 .logo:hover {
@@ -36,7 +36,7 @@
 
    }
 
-   .pageTitle {
+.pageTitle {
     font-size: 30px;
     margin-bottom: 60px;
     text-shadow:  2px 2px 7px;
@@ -44,12 +44,13 @@
     text-align: center;
   }
 
-  input[type="email"], input[type="password"] {
+  input[type="email"], 
+  input[type="password"] {
     width: 250px; 
     padding: 10px;
     margin-bottom: 20px; 
     border-radius: 5px; 
-    border: 1px solid #ccc; 
+    border: none; 
     box-sizing: border-box; 
     text-align: center; 
     box-shadow:inset 2px 2px 7px;
@@ -87,30 +88,68 @@ button:hover {
     border-radius: 5px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 1.5);
     z-index: 1000; 
-    opacity: 0; /* Startzustand des Popups, unsichtbar */
-    transition: 1s ease-in-out; /* Übergang für das Ein- und Ausblenden */
-    visibility: hidden; /* Verstecke das Popup standardmäßig */
+    opacity: 0; 
+    transition: 1s ease-in-out;
+    visibility: hidden; 
   }
   
-  .warningPopup.visible {
-    opacity: 1; /* Sichtbar, wenn die Klasse 'visible' hinzugefügt wird */
-    visibility: visible; /* Zeige das Popup an */
+.warningPopup.visible {
+    opacity: 1; 
+    visibility: visible; 
   }
   
    
   
-  
-  
-  
-  .warningContent {
+.warningContent {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .closeBtn {
+.closeBtn {
     color: rgb(46, 46, 46);
     align-self: flex-end;
     font-size: 20px;
     cursor: pointer;
   }
+
+  
+.accessPopup {
+    font-size: 50px;
+    border: solid black;
+    width: 500px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #47951a;
+    color: rgb(220, 220, 220);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 1.5);
+    z-index: 1000; 
+    opacity: 0; 
+    transition: 1s ease-in-out; 
+    visibility: hidden; 
+  }
+  
+.accesPopup.visible {
+    opacity: 1; 
+    visibility: visible; 
+  }
+  
+   
+  
+.accessContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.closeBtn {
+    color: rgb(46, 46, 46);
+    align-self: flex-end;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
