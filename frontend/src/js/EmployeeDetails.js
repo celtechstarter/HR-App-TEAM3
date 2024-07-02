@@ -47,7 +47,7 @@ const EmployeeDetails = () => {
   const domain = getCurrentDomain();
   const employeeIndex = employeeData.employees.findIndex(emp => emp.pers_id === id);
   const employee = employeeData.employees[employeeIndex];
-  const imgUrl = checkUrlExists(employeeData.public_image_path) == true ? employeeData.public_image_path : "." + employeeData.noimage_url;
+  const imgUrl = checkUrlExists(employeeData.public_image_path) === true ? employeeData.public_image_path : "." + employeeData.noimage_url;
 
   const handleBackClick = () => { 
     navigate('/');
