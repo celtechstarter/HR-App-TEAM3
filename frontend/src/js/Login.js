@@ -12,6 +12,8 @@ const LoginForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    console.log('Submitting...');
+
     if (email === 'bad@mofo.com' && password === '123456') {
         console.log('Acces granted');
         setAccessGranted(true);
